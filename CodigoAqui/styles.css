@@ -1,0 +1,194 @@
+.menu{
+    background:black;
+}
+footer{
+    background-color: rgb(152, 165, 165);
+}
+
+.efeito{
+    color: white;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    background: linear-gradient(135deg, #0a0a0a, #1b1b1b);
+    padding: 15px 0;
+  border-bottom: 2px solid #3f3f3f;
+}
+
+
+/* Fundo gamer */
+.header-gamer {
+  background: linear-gradient(135deg, #0a0a0a, #1e1e1e, #0f0f0f);
+  padding: 15px 0;
+  border-bottom: 2px solid #3f3f3f;
+}
+
+/* Logo */
+.logo-gamer {
+  width: 170px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Nome da loja */
+.nome-site {
+  font-size: 1.4rem;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+/* Links do menu */
+.efeito-menu {
+  color: #d1d1d1;
+  margin: 0 10px;
+  transition: .3s ease-in-out;
+  font-weight: 500;
+}
+
+.efeito-menu:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #fff;
+}
+
+/* Botão gamer */
+.btn-gamer {
+  background: #6a00ff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: .3s ease-in-out;
+  font-weight: bold;
+}
+
+.btn-gamer:hover {
+  background: #8a33ff;
+  box-shadow: 0 0 10px #8a33ff;
+}
+
+/* Menu alinhado */
+.alinhamento-menu .nav-link {
+  font-size: 16px;
+}
+
+.titulo-gamer {
+    font-size: 30px;
+    color: #ffffff; /* roxo neon */
+    font-weight: 700;
+  }
+
+  .parag{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+
+
+.img-miniatura {
+  width: 222px;
+  height: 200px;     /* tamanho fixo, ajustável */
+  object-fit: cover; /* mantém qualidade e corta de forma bonita */
+  border-radius: 8px;
+  margin: 7px; /* Espaçamento */
+}
+
+.img-miniatura {
+  width: 222px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease; /* suavidade */
+}
+
+
+.img-miniatura:hover {
+  transform: scale(1.1); /* aumenta a imagem */
+}
+
+img{
+    font-size: 0;
+}
+
+.imagem-header{
+  width: 200px;      /* tamanho da imagem */
+  height: auto;
+  object-fit: contain;
+  position: relative; /* mantém dentro do fluxo normal */
+  top: 25px;
+}
+
+#carouselAVB img {
+  height: 430px;       /* Ajuste a altura como quiser */
+  object-fit: cover;   /* Deixa a imagem cortada de forma elegante */
+  border-radius: 8px;
+}
+
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.footer-gamer {
+  background: linear-gradient(135deg, #0a0a0a, #1b1b1b);
+  border-top: 2px solid #3f3f3f;
+}
+
+.footer-link {
+  color: #bfbfbf;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+  padding-left: 5px;
+}
+
+.footer-social {
+  font-size: 22px;
+  color: #bfbfbf;
+  transition: 0.3s;
+}
+
+.footer-social:hover {
+  color: #ffffff;
+  transform: scale(1.2);
+}
+
+.bg-gamer {
+    background-color: black;
+  }
+
+  .content {
+    position: relative; 
+    z-index: 2;
+    color: white;
+  }
+
+  .highlight {
+    color: #6C63FF !important; /* cor neon gamer */
+  }
+
+  .neon-box {
+    background: rgba(255,255,255,0.07);
+    border-radius: 14px;
+    padding: 20px;
+    transition: 0.3s;
+    border: 1px solid rgba(255,255,255,0.12);
+  }
+
+  .neon-box:hover {
+    background: rgba(255,255,255,0.14);
+    transform: scale(1.05);
+  }
+
+
+  .neon-btn:hover {
+    background-color: #18740f;
+  }
