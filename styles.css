@@ -1,206 +1,286 @@
 
 
-/* Footer */
-footer {
-  background-color: rgb(152, 165, 165);
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-/* Links padrão */
-.efeito {
-  color: white;
-  font-size: 16px;
+body{
+  background-color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding:16px 0;
+  border-bottom:2px solid #3f3f3f;
 }
 
-/* Imagens responsivas */
-img {
-  max-width: 100%;
-  height: auto;
-  font-size: 0;
+img{
+  max-width:100%;
+  height:auto;
+  display:block;
 }
 
-/* Fundo do site */
-body {
-  background: linear-gradient(135deg, #0a0a0a, #1b1b1b);
-  padding: 16px 0;
-  border-bottom: 2px solid #3f3f3f;
+
+
+
+.header{
+  background-color: white;
+  padding:18px 0;
+  border-bottom:2px solid #3f3f3f;
+  transition:0.3s;
 }
 
-/* Header */
-.header {
-  background: linear-gradient(135deg, #0a0a0a, #1e1e1e, #0f0f0f);
-  padding: 18px 0;
-  border-bottom: 2px solid #3f3f3f;
+.header.scrolled{
+  background:#000;
+  box-shadow:0 4px 15px rgba(0,0,0,0.5);
 }
 
-/* Logo */
-.logo {
-  width: 170px;
-  height: auto;
-  border-radius: 10px;
+.logo{
+  width:170px;
+  border-radius:10px;
 }
 
-/* Nome do site */
-.nome-site {
-  font-size: 1.4rem;
-  color: #fff;
-  letter-spacing: 1px;
+.nome-site{
+  font-size:1.4rem;
+  color:#000000;
+  letter-spacing:1px;
 }
 
-/* Links do menu */
-.menu-item {
-  color: #d1d1d1;
-  margin: 0 10px;
-  transition: .3s ease-in-out;
-  font-weight: 500;
+
+
+
+.menu-item{
+  color: #000;
+  margin:0 10px;
+  transition:.3s;
+  font-weight:500;
+  position:relative;
 }
 
-.menu-item:hover {
-  color: #fff;
-  text-shadow: 0 0 10px #fff;
+.menu-item:hover{
+  color:#000000;
 }
 
-/* Alinhamento do menu */
-.alinhamento-menu .nav-link {
-  font-size: 16px;
+.menu-item::after{
+  content:"";
+  position:absolute;
+  width:0;
+  height:2px;
+  background:#28a745;
+  left:0;
+  bottom:-5px;
+  transition:0.3s;
 }
 
-/* Título principal */
-.titulo {
-  font-size: 30px;
-  color: #ffffff;
-  font-weight: 700;
+.menu-item:hover::after{
+  width:100%;
 }
 
-/* Parágrafo */
-.parag {
-  font-size: 18px;
-  color: rgb(255, 255, 255);
-  text-align: center;
+.alinhamento-menu .nav-link{
+  font-size:16px;
 }
 
-/* Miniaturas */
-.img-miniatura {
-  width: 222px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin: 7px;
-  transition: transform 0.3s ease;
+
+
+
+.titulo{
+  font-size:32px;
+  color:#000000;
+  font-weight:700;
 }
 
-.img-miniatura:hover {
-  transform: scale(1.1);
+.parag{
+  font-size:18px;
+  color:#000000;
+  text-align:center;
+  max-width:700px;
+  margin:auto;
 }
 
-/* Imagem do header */
-.imagem-header {
-  width: 200px;
-  height: auto;
-  object-fit: contain;
-  position: relative;
-  top: 25px;
+
+
+
+#carouselAVB img{
+  height:430px;
+  object-fit:cover;
+  border-radius:8px;
 }
 
-/* Carrossel */
-#carouselAVB img {
-  height: 430px;
-  object-fit: cover;
-  border-radius: 8px;
+.carousel-indicators button{
+  width:10px;
+  height:10px;
+  border-radius:50%;
 }
 
-.carousel-indicators button {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
+
+
+
+.box{
+  background:rgba(255,255,255,0.07);
+  border-radius:14px;
+  padding:20px;
+  transition:0.3s;
+  border:1px solid rgba(255,255,255,0.12);
 }
 
-/* Footer */
-.footer {
-  background: linear-gradient(135deg, #0a0a0a, #1b1b1b);
-  border-top: 2px solid #3f3f3f;
+.box:hover{
+  background:rgba(255,255,255,0.14);
+  transform:scale(1.05);
 }
 
-.footer-link {
-  color: #bfbfbf;
-  text-decoration: none;
-  transition: 0.3s;
-}
 
-.footer-link:hover {
-  color: #ffffff;
-  padding-left: 5px;
-}
 
-.footer-social {
-  font-size: 22px;
-  color: #bfbfbf;
-  transition: 0.3s;
-}
-
-.footer-social:hover {
-  color: #ffffff;
-  transform: scale(1.2);
-}
-
-/* Seções */
-.bg-dark-section {
-  background-color: black;
-}
-
-.content {
-  position: relative;
-  z-index: 2;
-  color: white;
-}
-
-.highlight {
-  color: #6C63FF !important;
-}
-
-/* Cards */
-.box {
-  background: rgba(255,255,255,0.07);
-  border-radius: 14px;
-  padding: 20px;
-  transition: 0.3s;
-  border: 1px solid rgba(255,255,255,0.12);
-}
-
-.box:hover {
-  background: rgba(255,255,255,0.14);
-  transform: scale(1.05);
-}
-
-/* Botão */
-.btn-custom:hover {
-  background-color: #18740f;
-}
 
 .duvida-section{
-    background-color: #0b5d4b;
-    padding: 2px 0;
+  background:#0b5d4b;
+  padding:5px 0;
 }
 
 .titulo-duvida{
-    font-size: 30px;
-    font-weight: 600;
+  font-size:32px;
+  font-weight:600;
 }
 
 .btn-acessar{
-    background-color: #fffefd;
-    color: white;
-    padding: 18px 35px;
-    border-radius: 30px;
-    font-weight: 500;
-    text-decoration: none;
-    transition: 0.3s;
+  background:#000000;
+  color:#0b5d4b;
+  padding:14px 35px;
+  border-radius:30px;
+  font-weight:600;
+  text-decoration:none;
+  transition:0.3s;
 }
 
 .btn-acessar:hover{
-    background-color: #ffffff;
-    color: white;
+  background:#e9e9e9;
+  transform:scale(1.05);
 }
 
 .agricultor-img{
-    max-height: 420px;
+  max-height:420px;
+}
+
+
+
+
+.suporte-agro{
+  background:linear-gradient(135deg,#e8f5e9,#c8e6c9);
+  padding:90px 0;
+}
+
+.titulo-agro{
+  font-size:40px;
+  font-weight:700;
+  color:#1b5e20;
+}
+
+.texto-agro{
+  font-size:18px;
+  color:#2e7d32;
+}
+
+.btn-agro{
+  background:#1b5e20;
+  color:white;
+  padding:12px 35px;
+  border-radius:25px;
+  font-weight:500;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.btn-agro:hover{
+  background:#2e7d32;
+  transform:scale(1.05);
+}
+
+.imagem-agro{
+  max-height:420px;
+}
+
+
+
+
+.footer-agro{
+  background:#0f5132;
+}
+
+.footer-titulo{
+  font-weight:600;
+  margin-bottom:15px;
+}
+
+.footer-links{
+  list-style:none;
+  padding:0;
+}
+
+.footer-links li{
+  margin-bottom:8px;
+}
+
+.footer-links a{
+  color:#d1d1d1;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.footer-links a:hover{
+  color:white;
+  padding-left:5px;
+}
+
+.footer-redes a{
+  font-size:22px;
+  margin-right:12px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.footer-redes a:hover{
+  transform:scale(1.2);
+}
+
+.footer-divisor{
+  border-color:rgba(255,255,255,0.2);
+}
+
+
+
+
+.btn-top{
+  position:fixed;
+  bottom:30px;
+  right:30px;
+  background:#28a745;
+  color:white;
+  border:none;
+  padding:12px 16px;
+  border-radius:50%;
+  font-size:18px;
+  display:none;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.btn-top:hover{
+  background:#1e7e34;
+}
+
+
+
+
+@media (max-width:768px){
+
+  .titulo-agro{
+    font-size:28px;
+  }
+
+  .titulo-duvida{
+    font-size:24px;
+  }
+
+  #carouselAVB img{
+    height:250px;
+  }
+
 }
