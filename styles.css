@@ -4,13 +4,16 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
+  
 }
 
 body{
   background-color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding:16px 0;
-  border-bottom:2px solid #3f3f3f;
+  padding: 16px 0;
+  padding:0;
+  margin: 0;
+
 }
 
 img{
@@ -132,7 +135,7 @@ img{
 
 .duvida-section{
   background:#0b5d4b;
-  padding:5px 0;
+  padding:25px 0;
 }
 
 .titulo-duvida{
@@ -141,8 +144,7 @@ img{
 }
 
 .btn-acessar{
-  background:#000000;
-  color:#0b5d4b;
+  background:#ffffff;
   padding:14px 35px;
   border-radius:30px;
   font-weight:600;
